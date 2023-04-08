@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #1a0dab;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 8vh;
+    padding: 0 25px;
+}
+
+.navbar--list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    font-size: 13px;
+}
+
+.navbar--list a {
+    color: rgba(0,0,0,.87);
+}
+
+.navbar--list a:nth-child(1):hover, 
+.navbar--list a:nth-child(2):hover{
+    text-decoration: underline;
+}
+
+.list--profile-icon {
+    width: 25px;
+}
+
+.list--profile-menu {
+    width: 30px;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 87vh;
+}
+
+.search {
+    width: 580px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #dfe1e5;
+    border-radius: 50px;
+    padding: 0 20px;
+}
+
+.search i {
+    font-size: 15px;
+    color: #202124;
+}
+
+.search:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.search input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.search--icons-right {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.buttons input {
+    margin: 10px 5px;
+    padding: 0 15px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #f8f9fa;
+    background-color: #f8f9fa;
+}
+
+.buttons input:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124
+}
+
+.text {
+    color: #202124;
+    text-align: center;
+}
+
+.text-primary {
+    display: block;
+    font-size: small;
+    margin-bottom: 35px;
+}
+
+.text-primary:hover, 
+.text-secundary a:hover {
+    text-decoration: underline;
+}
+
+.text-secundary {
+    display: block;
+    line-height: 28px;
+}
+
+footer {
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #dadce0;
+}
+
+footer ul {
+    display: flex;
+    gap: 30px;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    color: #70757a;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
